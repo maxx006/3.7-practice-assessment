@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<link href="White_echo.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card" data-price="249" data-value="Executive room">
+      <h3>Executive Suite</h3>
+		
+      <p>Some text</p>
+      <p>Some text</p>
+		<button type="button" class="roomButton">Book Room</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" data-price="289" data-value="Family Suite">
+      <h3>Family Suite</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+		<button type="button" class="roomButton">Book Room</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" data-price="219" data-value="Studio room">
+      <h3>Studio Room</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+		<button type="button" class="roomButton">Book Room</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" data-price="329" data-value="Two Bedroom room">
+      <h3>Two Bedroom Suite</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+		<button type="button" class="roomButton">Book Room</button>
+    </div>
+  </div>
+</div><!-- this closes off my room cards-->
+	<h2>reservation Summary</h2>
+	<table><thead>
+  <tr>
+    <th>Check in date</th>
+    <th></th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Number of nights</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Room</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Price per night</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Extras</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+	
+<label>First name: <input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="John" required="" title="Please enter in your first name" type="text"></label>
+        <div id="errorMessage1" class="errorMessages"></div>
+
+<label>Last name: <input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="Smith" required="" title="Please enter in your last name" type="text"></label>
+        <div id="errorMessage2" class="errorMessages"></div>
+	
+<label>Cellphone :</label><input autocomplete="on" id="cellPhoneInput" placeholder="0274822556" required="" title="Enter cellphone address" type="text">
+	
+<label>Pick up time :</label><input autocomplete="on" id="timeInput" placeholder="0274822556" required="" title="Enter your pick up time" type="text">
+
+	
+	<h3>do you agree to our terms and conditions?</h3>
+	<input type="checkbox" id="termsAndConditions">
+	
+	
+	<button type="button" class="submitButton" onclick="pushData()">Submit Reservation</button>
+	
+	
+	
+	
+	
+<script src="White_echo.js"></script>
+</body>
+</html>
