@@ -15,9 +15,8 @@
   <div class="column">
     <div class="card" data-price="249" data-value="Executive room">
       <h3>Executive Suite</h3>
-		
-      <p>Some text</p>
-      <p>Some text</p>
+      <img src="pictures/executive_suite.jpg" alt="executive suite">
+      <p>$249 per night</p>
 		<button type="button" class="roomButton">Book Room</button>
     </div>
   </div>
@@ -25,8 +24,8 @@
   <div class="column">
     <div class="card" data-price="289" data-value="Family Suite">
       <h3>Family Suite</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <img src="pictures/family_suite.jpg" alt="family suite">
+      <p>$289 per night</p>
 		<button type="button" class="roomButton">Book Room</button>
     </div>
   </div>
@@ -34,8 +33,8 @@
   <div class="column">
     <div class="card" data-price="219" data-value="Studio room">
       <h3>Studio Room</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <img src="pictures/studio room.jpg" alt="studio room">
+      <p>$219 per night</p>
 		<button type="button" class="roomButton">Book Room</button>
     </div>
   </div>
@@ -43,13 +42,28 @@
   <div class="column">
     <div class="card" data-price="329" data-value="Two Bedroom room">
       <h3>Two Bedroom Suite</h3>
-      <p>Some text</p>
-      <p>Some text</p>
+      <img src="pictures/two_bedroom suite.jpg" alt="two bedroom">
+      <p>$329 per night</p>
 		<button type="button" class="roomButton">Book Room</button>
     </div>
   </div>
 </div><!-- this closes off my room cards-->
+	
+<label>First name: <input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="John" required="" title="Please enter in your first name" type="text"></label>
+        <div id="errorMessage1" class="errorMessages"></div>
+
+<label>Last name: <input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="Smith" required="" title="Please enter in your last name" type="text"></label>
+        <div id="errorMessage2" class="errorMessages"></div>
+	
+<label>Cellphone :</label><input autocomplete="on" id="cellPhoneInput" placeholder="0274822556" required="" title="Enter cellphone address" type="text">
+	
+<label>Pick up time :</label><input autocomplete="on" id="timeInput" placeholder="0274822556" required="" title="Enter your pick up time" type="text">
+	
+	
+	
+	
 	<h2>reservation Summary</h2>
+
 	<table><thead>
   <tr>
     <th>Check in date</th>
@@ -79,15 +93,6 @@
 </tbody>
 </table>
 	
-<label>First name: <input autocomplete="given-name" id="firstNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="John" required="" title="Please enter in your first name" type="text"></label>
-        <div id="errorMessage1" class="errorMessages"></div>
-
-<label>Last name: <input autocomplete="family-name" id="lastNameInput" pattern="[A-Za-z\-']{2,10}" placeholder="Smith" required="" title="Please enter in your last name" type="text"></label>
-        <div id="errorMessage2" class="errorMessages"></div>
-	
-<label>Cellphone :</label><input autocomplete="on" id="cellPhoneInput" placeholder="0274822556" required="" title="Enter cellphone address" type="text">
-	
-<label>Pick up time :</label><input autocomplete="on" id="timeInput" placeholder="0274822556" required="" title="Enter your pick up time" type="text">
 
 	
 	<h3>do you agree to our terms and conditions?</h3>

@@ -1,4 +1,13 @@
 // JavaScript Document
+alert("js is attached");
+
+function roomBooking(){
+	alert("room booking function starting")
+}
+
+
+
+
 
 function pushData(){
 	alert("at the push datafunction - nearly done!"); //output a message to the html a message confirming thier tickets
@@ -11,12 +20,8 @@ function pushData(){
 	}).base('appL4WJnXSRgqOvqD');
 	console.log("Creating a record....");
 	base('Reservation Echo').create({
-			"First name": "firstname",
-			"Last name": lastname,
-			"Total cost": addCost,
-			"Cellphone": cellPhone,
-			"Pick up time": pickUpTime,
-			"Sandwhich": checkedAddItems
+			"First name": "firstname"
+			
 		}, {
 			typecast: true
 		}, //gets the API to convert types instead of parsing everything as strings.
@@ -28,4 +33,12 @@ function pushData(){
 			alert("record created");
 			console.log("Record created: " + record.getId());
 		});
+}
+
+
+//Add event listeners to the room cards which will call up the room booking function
+var tiles = document.getElementsByClassName('card');
+for (var i = 0; i < tiles.length; i++) {
+// if a tile is clicked, it calls the selectExercise function
+tiles[i].addEventListener ('click', roomBooking);
 }
